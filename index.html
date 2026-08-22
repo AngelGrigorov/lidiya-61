@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Лидия — 61 години</title>
+<meta name="description" content="Честит рожден ден, мамо.">
+<meta name="theme-color" content="#faf6ee">
+<meta property="og:title" content="Честит рожден ден, мамо">
+<meta property="og:description" content="Лидия — 61 години.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf6ee;
+    --paper-2:#f2ebdd;
+    --ink:#332f28;
+    --ink-2:#5d5648;
+    --ink-3:#928873;
+    --green:#5a6b41;
+    --amber:#b0803a;
+    --line:rgba(51,47,40,.15);
+    --serif:"Lora",Georgia,"Times New Roman",serif;
+    --sans:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+    --measure:36rem;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink-2);
+    font-family:var(--sans);
+    font-weight:300;
+    font-size:clamp(1.16rem,4.4vw,1.3rem);
+    line-height:1.8;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .sun{
+    position:fixed;left:50%;top:-30vmin;width:96vmin;height:96vmin;
+    transform:translateX(-50%);z-index:0;pointer-events:none;
+    background:radial-gradient(circle at 50% 50%,
+      rgba(214,176,104,.22) 0%,
+      rgba(150,166,116,.12) 38%,
+      rgba(250,246,238,0) 70%);
+  }
+  main{position:relative;z-index:1}
+
+  section{
+    padding:clamp(4.5rem,13vh,8.5rem) clamp(1.4rem,7vw,2rem);
+    display:flex;flex-direction:column;align-items:center;text-align:center;
+  }
+  .w{width:100%;max-width:var(--measure);margin:0 auto}
+
+  .eyebrow{
+    font-weight:400;font-size:.76rem;letter-spacing:.36em;
+    text-transform:uppercase;color:var(--ink-3);margin:0;
+  }
+
+  p{margin:0 0 1.15em}
+  p:last-child{margin-bottom:0}
+
+  .lead{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(1.62rem,6.2vw,2.1rem);
+    line-height:1.5;color:var(--ink);
+  }
+  .body{font-size:inherit;line-height:1.82}
+  em{font-style:italic;color:var(--ink)}
+
+  /* ── герой ─────────────────────────────────────── */
+  .hero{min-height:100svh;justify-content:center;padding-top:12vh;padding-bottom:10vh}
+  .name{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(3.2rem,15vw,5.4rem);
+    line-height:1.06;margin:1.5rem 0 0;color:var(--ink);
+  }
+  .numeral{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(7rem,33vw,12.5rem);
+    line-height:.92;margin:.2em 0 0;letter-spacing:-.02em;
+    background:linear-gradient(165deg,#e3c489 0%,#b4863c 30%,#8a6528 52%,#e8d3a2 72%,#a97e37 100%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+  }
+  .numeral-label{
+    font-weight:400;font-size:.8rem;letter-spacing:.38em;
+    text-transform:uppercase;color:var(--ink-3);margin:.8rem 0 0;
+  }
+  .years{
+    font-family:var(--serif);font-size:1.15rem;letter-spacing:.3em;
+    color:var(--ink-3);margin:2.4rem 0 0;
+  }
+
+  /* ── орнаменти ─────────────────────────────────── */
+  .rule{
+    width:1px;height:clamp(3rem,9vh,5rem);margin:0 auto;
+    background:linear-gradient(to bottom,transparent,var(--line) 30%,var(--line) 70%,transparent);
+  }
+  .divider{display:flex;align-items:center;gap:1.1rem;width:min(100%,20rem);margin:0 auto}
+  .divider::before,.divider::after{
+    content:"";flex:1;height:1px;
+    background:linear-gradient(to right,transparent,var(--line),transparent);
+  }
+  .divider .dot{width:5px;height:5px;border-radius:50%;background:var(--amber);opacity:.8}
+
+  /* ── лозницата ─────────────────────────────────── */
+  .vine{width:min(42%,8.5rem);height:auto;margin:0 auto;display:block}
+
+  /* ── снимки ────────────────────────────────────── */
+  .gallery{
+    display:grid;gap:clamp(1.1rem,4vw,1.6rem);
+    grid-template-columns:1fr;width:100%;max-width:var(--measure);
+  }
+  figure{margin:0}
+  .frame{
+    position:relative;overflow:hidden;
+    background:#fff;padding:.6rem;
+    border:1px solid rgba(51,47,40,.12);
+    box-shadow:0 18px 38px -22px rgba(60,48,28,.55);
+  }
+  .frame img{
+    display:block;width:100%;height:100%;object-fit:cover;
+    aspect-ratio:4/5;
+  }
+  .frame.wide img{aspect-ratio:3/2}
+  .frame.tall img{aspect-ratio:3/4}
+  @media (min-width:46rem){
+    .gallery.two{grid-template-columns:1fr 1fr}
+  }
+
+  .single{width:100%;max-width:26rem;margin:0 auto}
+
+  figcaption{
+    font-size:.84rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--ink-3);margin-top:.9rem;
+  }
+
+  /* ── финал ─────────────────────────────────────── */
+  .closing{padding-bottom:clamp(5rem,15vh,9rem)}
+  .signature{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(1.5rem,6.6vw,2.1rem);
+    line-height:1.38;color:var(--ink);margin-top:2.6rem;
+  }
+  .signature .from{
+    display:block;font-size:.6em;font-style:normal;
+    margin-top:.7em;color:var(--ink-3);letter-spacing:.02em;
+  }
+  .wishes{
+    font-size:.88rem;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--ink-3);margin-top:3.2rem;line-height:2.3;
+  }
+
+  /* ── появяване ─────────────────────────────────── */
+  .r{opacity:0;transform:translateY(18px);transition:opacity 1.2s cubic-bezier(.22,.61,.36,1),transform 1.2s cubic-bezier(.22,.61,.36,1)}
+  .r.in{opacity:1;transform:none}
+  .d1{transition-delay:.12s}.d2{transition-delay:.26s}.d3{transition-delay:.4s}.d4{transition-delay:.54s}
+
+  @media (prefers-reduced-motion:reduce){
+    .r{opacity:1;transform:none;transition:none}
+  }
+</style>
+<noscript><style>.r{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+<div class="sun" aria-hidden="true"></div>
+
+<main>
+
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <p class="eyebrow r in">Честит рожден ден</p>
+    <h1 class="name r in d1">Лидия</h1>
+    <div class="numeral r in d2">61</div>
+    <p class="numeral-label r in d3">години</p>
+    <p class="years r in d4">1965 — 2026</p>
+  </section>
+
+  <!-- ПЪРВО СЛОВО -->
+  <section>
+    <div class="w">
+      <div class="rule r"></div>
+      <p class="lead r d1" style="margin-top:2.4rem">
+        Днес празнува човекът, който за мен винаги ще бъде
+        един от най-важните хора на този свят — моята майка.
+      </p>
+      <p class="body r d2">
+        Шейсет и една години сила, обич, грижа, усмивки и безброй моменти,
+        за които съм ти благодарен. Няма думи, с които да ти се отблагодаря
+        за всичко, което си направила за мен, за всичко, което си ми дала,
+        и за това, че винаги си била до мен.
+      </p>
+    </div>
+  </section>
+
+  <!-- СНИМКИ -->
+  <section>
+    <div class="gallery two">
+      <figure class="r d1"><div class="frame"><img src="photos/p1.jpg" alt="Лидия" loading="lazy"></div></figure>
+      <figure class="r d2"><div class="frame"><img src="photos/p2.jpg" alt="Лидия" loading="lazy"></div></figure>
+    </div>
+  </section>
+
+  <!-- ВТОРО СЛОВО -->
+  <section>
+    <div class="w">
+      <p class="lead r">
+        Днес аз съм съпруг, баща и човек, който има свое семейство.
+      </p>
+      <p class="body r d1">
+        И колкото повече пораствам, толкова повече разбирам колко много
+        си направила за мен и колко ценна е всяка твоя дума,
+        всяка твоя прегръдка и всяка твоя жертва.
+      </p>
+    </div>
+  </section>
+
+  <!-- СЕМЕЙСТВОТО -->
+  <section>
+    <div class="single">
+      <figure class="r"><div class="frame"><img src="photos/p3.jpg" alt="Семейството" loading="lazy"></div></figure>
+    </div>
+  </section>
+
+  <!-- ЛОЗНИЦАТА И СЪРЦЕВИНАТА -->
+  <section>
+    <div class="w">
+      <svg class="vine r" viewBox="0 0 120 170" role="img" aria-label="Гроздов чепка">
+        <g fill="none" stroke="#5a6b41" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <!-- пръчка -->
+          <path d="M60,6 C60,16 59,26 58,38"/>
+          <!-- мустаче, което се вие наляво -->
+          <path d="M59,16 C50,13 40,15 35,22 C30,29 36,36 42,33 C47,30 45,24 40,25"/>
+          <!-- лист надясно -->
+          <path d="M62,21 C70,13 82,13 90,20 C83,29 70,30 62,24 Z"/>
+          <path d="M63,23 C71,22 80,22 88,21" stroke-width="1"/>
+        </g>
+        <g fill="#8f9e6f" fill-opacity=".55" stroke="#5a6b41" stroke-width="1.2">
+          <circle cx="42" cy="52" r="9.2"/><circle cx="60" cy="52" r="9.2"/><circle cx="78" cy="52" r="9.2"/>
+          <circle cx="33" cy="69" r="9.2"/><circle cx="51" cy="69" r="9.2"/><circle cx="69" cy="69" r="9.2"/><circle cx="87" cy="69" r="9.2"/>
+          <circle cx="42" cy="86" r="9.2"/><circle cx="60" cy="86" r="9.2"/><circle cx="78" cy="86" r="9.2"/>
+          <circle cx="51" cy="103" r="9.2"/><circle cx="69" cy="103" r="9.2"/>
+          <circle cx="60" cy="120" r="9.2"/>
+        </g>
+      </svg>
+
+      <p class="lead r d1" style="margin-top:2.8rem">
+        Аз съм най-щастливият и най-гордият син,
+        защото имам майка като теб.
+      </p>
+      <p class="body r d2">
+        А най-голямото ми щастие е, че днес мога да гледам собственото си дете
+        и да разбирам още по-добре какво означава истинската майчина любов.
+      </p>
+      <p class="body r d3">
+        <em>Всичко, което съм днес, носи частица от теб.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ТРЕТОТО ПОКОЛЕНИЕ -->
+  <section>
+    <div class="single">
+      <figure class="r">
+        <div class="frame"><img src="photos/p4.jpg" alt="Лидия с внука си" loading="lazy"></div>
+        <figcaption>Баба и внук</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ПОЖЕЛАНИЕТО -->
+  <section class="closing">
+    <div class="w">
+      <div class="divider r"><span class="dot"></span></div>
+      <p class="lead r d1" style="margin-top:2.6rem">
+        Мамо, пожелавам ти от цялото си сърце да бъдеш здрава,
+        да се усмихваш много, да имаш спокойни дни и безброй
+        щастливи моменти с хората, които те обичат.
+      </p>
+      <p class="body r d2">
+        Искам да знаеш, че каквото и да се случи, винаги ще бъда твоят син
+        и винаги ще имаш специално място в сърцето ми.
+      </p>
+
+      <p class="signature r d3">
+        Обичам те повече, отколкото думите могат да кажат.
+        <span class="from">Твоят син</span>
+      </p>
+
+      <p class="wishes r d4">
+        Гордея се с теб<br>
+        Бъди ни здрава<br>
+        Още много, много години
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.r:not(.in)');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(e){ e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.14, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+
+</body>
+</html>
